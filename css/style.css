@@ -1,0 +1,67 @@
+
+.modal-dialog {
+  text-align: center;
+}
+.modal-body .btn {
+  font-size: 3em;
+  font-family: monospaced;
+}
+.modal-footer {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  border-top: 1px #ECECEC solid;
+  margin: 1em;
+  padding: 0.5em;
+}
+
+.x {
+  display: none;
+}
+.o {
+  display: none;
+}
+.victory {
+  background-color: yellow;
+}
+
+[data-y="1"] {
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+[data-x="1"] {
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+}
+#board {
+  width: 18.2em;
+  margin: 0 auto;
+}
+.square {
+  cursor: pointer;
+  position: relative;
+  float: left;
+  display:inline-block;
+  width: 1em;
+  height: 1em;
+  padding: 5px;
+  text-align: center;
+  font-size: 6em;
+  line-height: 1em;
+  font-family: monospaced;
+}
+.square:hover {
+  background-color: #EEE;
+}
+
+/*
+https://css-tricks.com/snippets/css/clear-fix/
+*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
